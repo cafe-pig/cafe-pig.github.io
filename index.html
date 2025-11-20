@@ -3,107 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Major | 글로벌 혁신 기업</title>
+    <title>K-금융 - 신뢰의 금융 파트너</title>
     <style>
-        /* 대기업 느낌을 위한 기본 스타일 */
+        /* 글로벌 스타일 */
         body {
-            font-family: 'Malgun Gothic', 'Arial', sans-serif;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif; /* 폰트 변경 */
             margin: 0;
             padding: 0;
+            background-color: #f4f7f9; /* 배경색 변경 */
+            color: #2c3e50;
+        }
+
+        /* 1. 상단 메뉴 바 (헤더) 스타일 */
+        .header {
             background-color: #ffffff;
-            color: #1a1a1a;
+            color: #2c3e50;
+            padding: 15px 50px; /* 패딩 증가 */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        header {
-            background-color: #003366; /* 신뢰감을 주는 짙은 파랑 */
-            color: white;
-            padding: 25px 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.8em;
+        .header h1 {
+            font-size: 28px; /* 폰트 크기 증가 */
+            color: #004a99; /* 메인 금융 색상 (진한 파랑) */
             margin: 0;
+            font-weight: 900;
         }
-        nav a {
-            color: #a0c3e8;
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-menu li {
+            margin-left: 35px; /* 간격 증가 */
+        }
+        .nav-menu a {
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            color: #2c3e50;
+            font-weight: 600; /* 폰트 굵기 조정 */
+            transition: color 0.3s;
         }
+        .nav-menu a:hover {
+            color: #007bff; /* 호버 색상 */
+        }
+
+        /* 2. 중단 이미지 및 뉴스룸 섹션 스타일 */
+        .main-content {
+            padding: 40px 50px;
+            display: flex;
+            gap: 20px;
+        }
+        .main-image-container {
+            flex: 2;
+        }
+        /* 메인 이미지 스타일: 텍스트 좌하단 배치 */
         .main-image {
             width: 100%;
-            height: 400px; /* 이미지 높이 지정 */
-            overflow: hidden;
-            margin-bottom: 30px;
+            height: 450px; /* 높이 증가 */
+            /* 금융 관련 이미지 URL로 변경 */
+            background: url('https://w.namu.la/s/f7b05615822e1b1076b1f237f59d5b78b871987d6928e46955d7f02d09cc4c85244ddf136e4f16b24df4af8684d0b2f960f7e91409af50d0322c366838a6a6873528b74f0774619a9e34e568b2011b9514798c869e54d8011c76e27150c9509a') center center / cover no-repeat;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: white;
+            font-size: 42px; /* 폰트 크기 증가 */
+            font-weight: 900;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* 그림자 진하게 */
+            margin-bottom: 20px;
+            padding: 30px; /* 여백 증가 */
+            box-sizing: border-box;
         }
-        .main-image img {
+        .side-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        /* 사이드 이미지 스타일: 텍스트 좌하단 배치 */
+        .side-image {
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* 이미지를 잘리지 않고 꽉 채우게 설정 */
+            height: 215px; /* 높이 조정 */
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px; /* 여백 증가 */
+            box-sizing: border-box;
         }
-        .container {
-            width: 85%;
-            margin: auto;
-            padding: 20px 0;
+        /* 개별 이미지 스타일 (금융 테마에 맞게 변경) */
+        .investment-product-image {
+             /* 투자 상품 이미지 */
+            background-image: url('https://i.namu.wiki/i/2B6vj_XkQ8R-6Yh7m6u5uF3H3i7o6g9h-g8jH2g9l7m6k8_h8x7j8e7w9m-8j-w9m6j8z9e8t3n9r4q6p7i1j4k5j8v0s8h1p7n0l3r2l8i6r1n4p6.webp');
         }
-        section {
-            padding: 20px 0;
-            border-bottom: 1px solid #e0e0e0; /* 섹션 구분선 */
+        .esg-commitment-image {
+            /* ESG 이미지 */
+            background-image: url('https://www.kisa.or.kr/upload/1045/article/file/html/2023/12/2023121516080312675973.jpg');
+        }
+
+        /* 3. 중 하단 지사 링크 섹션 스타일 */
+        .affiliate-section {
+            padding: 50px 50px; /* 패딩 증가 */
+            text-align: center;
+            background-color: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.05);
+        }
+        .affiliate-section h2 {
+            color: #333;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #004a99; /* 색상 변경 */
+            padding-bottom: 15px;
+            display: inline-block;
+            font-size: 26px;
+        }
+        .affiliate-links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .affiliate-link-item {
+            text-align: center;
+            margin: 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .affiliate-link-item:hover {
+            transform: translateY(-8px); /* 더 크게 움직임 */
+            color: #007bff;
+        }
+        .affiliate-link-item img {
+            width: 140px; /* 크기 증가 */
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #004a99; /* 테두리 색상 변경 */
+            transition: border-color 0.3s;
+        }
+        .affiliate-link-item:hover img {
+             border-color: #007bff;
+        }
+        .affiliate-link-item p {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* 4. 최하단 푸터 스타일 */
+        .footer-top {
+            background-color: #2c3e50; /* 진한 남색/회색 */
+            color: #cad3dc;
+            padding: 30px 50px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
             margin-bottom: 20px;
         }
-        footer {
-            background-color: #f4f4f4;
-            color: #555;
+        .footer-links a {
+            color: #cad3dc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            background-color: #2c3e50;
+            color: #8fa0b3;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
+            padding: 15px 50px;
+            font-size: 13px;
+            border-top: 1px solid #44566c;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>K-Major</h1>
-        <p>Global Leading Technology Partner</p>
-        <nav>
-            <a href="#intro">회사 소개</a> | 
-            <a href="#work">핵심 역량</a> | 
-            <a href="#info">투자 및 문의</a>
-        </nav>
+    <header class="header">
+        <h1>K-FINANCE</h1>
+        <ul class="nav-menu">
+            <li><a href="#company">회사 소개</a></li>
+            <li><a href="#investment">투자 상품</a></li>
+            <li><a href="#asset">자산 관리</a></li>
+            <li><a href="#ir">IR 정보</a></li>
+            <li><a href="#esg">지속 가능 경영 (ESG)</a></li>
+        </ul>
     </header>
 
-    <div class="main-image">
-        <img src="images/main_visual.jpg" alt="K-Major 본사 전경 또는 비전 이미지">
+    <div class="main-content">
+        <div class="main-image-container">
+            <div class="main-image">고객과 함께, 신뢰를 쌓아가는 K-금융</div>
+        </div>
+        <div class="side-images">
+            <div class="side-image investment-product-image">맞춤형 투자 솔루션</div>
+            <div class="side-image esg-commitment-image">지속 가능한 금융의 미래</div>
+        </div>
     </div>
 
-    <div class="container">
-        
-        <section id="intro">
-            <h2>🌍 회사 소개: 미래를 여는 기술</h2>
-            <p><strong>K-Major</strong>는 30년 이상의 경험을 바탕으로, 제조, 금융, 바이오 등 핵심 산업 분야에 최적화된 **엔터프라이즈 솔루션**을 제공합니다. 우리는 기술 혁신을 통해 지속 가능한 성장을 이끌어가는 데 집중합니다.</p>
-            <p>글로벌 네트워크를 통해 전 세계 고객에게 신뢰받는 파트너로 자리매김하고 있습니다.</p>
-        </section>
+    <section class="affiliate-section">
+        <h2>K-Group 계열사</h2>
+        <div class="affiliate-links">
+            <a href="#" class="affiliate-link-item">
+                <img src="https://placehold.co/140x140/007bff/FFFFFF/png?text=K-SECURITIES" alt="K-증권">
+                <p>K-증권</p>
+            </a>
+            <a href="#" class="affiliate-link-item">
+                <img src="https://placehold.co/140x140/28a745/FFFFFF/png?text=K-BANK" alt="K-은행">
+                <p>K-은행</p>
+            </a>
+            <a href="#" class="affiliate-link-item">
+                <img src="https://placehold.co/140x140/ffc107/333333/png?text=K-ASSET" alt="K-자산운용">
+                <p>K-자산운용</p>
+            </a>
+        </div>
+    </section>
 
-        <section id="work">
-            <h2>🔬 핵심 역량</h2>
-            <ul>
-                <li>**Digital Transformation:** AI 기반 업무 효율화 및 자동화 플랫폼 구축</li>
-                <li>**Cloud & Infrastructure:** 기업 맞춤형 하이브리드 클라우드 전환 컨설팅</li>
-                <li>**Security & Compliance:** 글로벌 표준에 맞는 최고 수준의 보안 솔루션 제공</li>
-            </ul>
-        </section>
-
-        <section id="info">
-            <h2>📞 연락 및 투자 문의</h2>
-            <p><strong>대표 연락처:</strong> 02-1234-5678</p>
-            <p><strong>이메일:</strong> investment@k-major.com</p>
-            <address>본사: 서울특별시 강남구 K-Major 타워</address>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2025 K-Major. All Rights Reserved. | <a href="#" style="color:#555;">개인정보 처리방침</a></p>
+    <footer class="footer-top">
+        <ul class="footer-links">
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">채용 정보</a></li>
+            <li><a href="#">약관 및 정책</a></li>
+            <li><a href="#">내부 고발</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+        </ul>
     </footer>
+    <div class="footer-bottom">
+        Copyright &copy; 2025 KFinance Corporation. All rights reserved. | 대표번호: 02-1234-5678
+    </div>
 
 </body>
 </html>
