@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-금융 - 신뢰의 금융 파트너</title>
+    <title>K-건설 - 미래를 짓는 파트너</title>
     <style>
         /* 글로벌 스타일 */
         body {
-            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif; /* 폰트 변경 */
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f9; /* 배경색 변경 */
+            background-color: #f0f2f5; /* 배경색 변경 */
             color: #2c3e50;
         }
 
@@ -18,15 +18,15 @@
         .header {
             background-color: #ffffff;
             color: #2c3e50;
-            padding: 15px 50px; /* 패딩 증가 */
+            padding: 15px 50px;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .header h1 {
-            font-size: 28px; /* 폰트 크기 증가 */
-            color: #004a99; /* 메인 금융 색상 (진한 파랑) */
+            font-size: 28px;
+            color: #1a7a40; /* 메인 건설 색상 (짙은 녹색) */
             margin: 0;
             font-weight: 900;
         }
@@ -37,16 +37,16 @@
             display: flex;
         }
         .nav-menu li {
-            margin-left: 35px; /* 간격 증가 */
+            margin-left: 35px;
         }
         .nav-menu a {
             text-decoration: none;
             color: #2c3e50;
-            font-weight: 600; /* 폰트 굵기 조정 */
+            font-weight: 600;
             transition: color 0.3s;
         }
         .nav-menu a:hover {
-            color: #007bff; /* 호버 색상 */
+            color: #ff8c00; /* 호버 색상 (주황색/안전 색상) */
         }
 
         /* 2. 중단 이미지 및 뉴스룸 섹션 스타일 */
@@ -61,18 +61,18 @@
         /* 메인 이미지 스타일: 텍스트 좌하단 배치 */
         .main-image {
             width: 100%;
-            height: 450px; /* 높이 증가 */
-            /* 금융 관련 이미지 URL로 변경 */
-            background: url('https://w.namu.la/s/f7b05615822e1b1076b1f237f59d5b78b871987d6928e46955d7f02d09cc4c85244ddf136e4f16b24df4af8684d0b2f960f7e91409af50d0322c366838a6a6873528b74f0774619a9e34e568b2011b9514798c869e54d8011c76e27150c9509a') center center / cover no-repeat;
+            height: 450px;
+            /* 건설 관련 이미지 URL로 변경 */
+            background: url('https://image.ytn.co.kr/general/jpg/2021/0811/202108111009141011_t.jpg') center center / cover no-repeat;
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
             color: white;
-            font-size: 42px; /* 폰트 크기 증가 */
+            font-size: 42px;
             font-weight: 900;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* 그림자 진하게 */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             margin-bottom: 20px;
-            padding: 30px; /* 여백 증가 */
+            padding: 30px;
             box-sizing: border-box;
         }
         .side-images {
@@ -84,7 +84,7 @@
         /* 사이드 이미지 스타일: 텍스트 좌하단 배치 */
         .side-image {
             width: 100%;
-            height: 215px; /* 높이 조정 */
+            height: 215px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
@@ -95,22 +95,22 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 20px; /* 여백 증가 */
+            padding: 20px;
             box-sizing: border-box;
         }
-        /* 개별 이미지 스타일 (금융 테마에 맞게 변경) */
-        .investment-product-image {
-             /* 투자 상품 이미지 */
-            background-image: url('https://i.namu.wiki/i/2B6vj_XkQ8R-6Yh7m6u5uF3H3i7o6g9h-g8jH2g9l7m6k8_h8x7j8e7w9m-8j-w9m6j8z9e8t3n9r4q6p7i1j4k5j8v0s8h1p7n0l3r2l8i6r1n4p6.webp');
+        /* 개별 이미지 스타일 (건설 테마에 맞게 변경) */
+        .architecture-project-image {
+             /* 건축 프로젝트 이미지 */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lotte_World_Tower_in_September_2016.jpg/1200px-Lotte_World_Tower_in_September_2016.jpg');
         }
-        .esg-commitment-image {
-            /* ESG 이미지 */
-            background-image: url('https://www.kisa.or.kr/upload/1045/article/file/html/2023/12/2023121516080312675973.jpg');
+        .safety-management-image {
+            /* 안전 관리 이미지 */
+            background-image: url('https://cdn.breaknews.com/news/photo/202305/982075_187649_535.jpg');
         }
 
         /* 3. 중 하단 지사 링크 섹션 스타일 */
         .affiliate-section {
-            padding: 50px 50px; /* 패딩 증가 */
+            padding: 50px 50px;
             text-align: center;
             background-color: #ffffff;
             margin-top: 20px;
@@ -119,7 +119,7 @@
         .affiliate-section h2 {
             color: #333;
             margin-bottom: 40px;
-            border-bottom: 3px solid #004a99; /* 색상 변경 */
+            border-bottom: 3px solid #1a7a40; /* 색상 변경 */
             padding-bottom: 15px;
             display: inline-block;
             font-size: 26px;
@@ -137,18 +137,18 @@
             transition: transform 0.3s, color 0.3s;
         }
         .affiliate-link-item:hover {
-            transform: translateY(-8px); /* 더 크게 움직임 */
-            color: #007bff;
+            transform: translateY(-8px);
+            color: #ff8c00;
         }
         .affiliate-link-item img {
-            width: 140px; /* 크기 증가 */
+            width: 140px;
             height: 140px;
             border-radius: 50%;
-            border: 4px solid #004a99; /* 테두리 색상 변경 */
+            border: 4px solid #1a7a40; /* 테두리 색상 변경 */
             transition: border-color 0.3s;
         }
         .affiliate-link-item:hover img {
-             border-color: #007bff;
+             border-color: #ff8c00;
         }
         .affiliate-link-item p {
             margin-top: 15px;
@@ -158,8 +158,8 @@
 
         /* 4. 최하단 푸터 스타일 */
         .footer-top {
-            background-color: #2c3e50; /* 진한 남색/회색 */
-            color: #cad3dc;
+            background-color: #34495e; /* 진한 회색/파랑 */
+            color: #ecf0f1;
             padding: 30px 50px;
         }
         .footer-links {
@@ -171,44 +171,44 @@
             margin-bottom: 20px;
         }
         .footer-links a {
-            color: #cad3dc;
+            color: #ecf0f1;
             text-decoration: none;
             font-size: 14px;
             transition: color 0.3s;
         }
         .footer-links a:hover {
-            color: #ffffff;
+            color: #ff8c00;
         }
         .footer-bottom {
-            background-color: #2c3e50;
-            color: #8fa0b3;
+            background-color: #34495e;
+            color: #bdc3c7;
             text-align: center;
             padding: 15px 50px;
             font-size: 13px;
-            border-top: 1px solid #44566c;
+            border-top: 1px solid #4f637b;
         }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <h1>K-FINANCE</h1>
+        <h1>K-CONSTRUCTION</h1>
         <ul class="nav-menu">
             <li><a href="#company">회사 소개</a></li>
-            <li><a href="#investment">투자 상품</a></li>
-            <li><a href="#asset">자산 관리</a></li>
-            <li><a href="#ir">IR 정보</a></li>
-            <li><a href="#esg">지속 가능 경영 (ESG)</a></li>
+            <li><a href="#projects">주요 프로젝트</a></li>
+            <li><a href="#safety">안전 및 품질</a></li>
+            <li><a href="#tech">기술 혁신</a></li>
+            <li><a href="#sustainability">지속 가능 경영</a></li>
         </ul>
     </header>
 
     <div class="main-content">
         <div class="main-image-container">
-            <div class="main-image">고객과 함께, 신뢰를 쌓아가는 K-금융</div>
+            <div class="main-image">최고의 기술력으로 미래 도시를 건설합니다.</div>
         </div>
         <div class="side-images">
-            <div class="side-image investment-product-image">맞춤형 투자 솔루션</div>
-            <div class="side-image esg-commitment-image">지속 가능한 금융의 미래</div>
+            <div class="side-image architecture-project-image">랜드마크 건축 프로젝트</div>
+            <div class="side-image safety-management-image">첨단 안전 관리 시스템</div>
         </div>
     </div>
 
@@ -216,16 +216,16 @@
         <h2>K-Group 계열사</h2>
         <div class="affiliate-links">
             <a href="#" class="affiliate-link-item">
-                <img src="https://placehold.co/140x140/007bff/FFFFFF/png?text=K-SECURITIES" alt="K-증권">
-                <p>K-증권</p>
+                <img src="https://placehold.co/140x140/007bff/FFFFFF/png?text=K-INFRA" alt="K-인프라">
+                <p>K-인프라</p>
             </a>
             <a href="#" class="affiliate-link-item">
-                <img src="https://placehold.co/140x140/28a745/FFFFFF/png?text=K-BANK" alt="K-은행">
-                <p>K-은행</p>
+                <img src="https://placehold.co/140x140/1a7a40/FFFFFF/png?text=K-RESIDENTIAL" alt="K-주택">
+                <p>K-주택</p>
             </a>
             <a href="#" class="affiliate-link-item">
-                <img src="https://placehold.co/140x140/ffc107/333333/png?text=K-ASSET" alt="K-자산운용">
-                <p>K-자산운용</p>
+                <img src="https://placehold.co/140x140/ff8c00/333333/png?text=K-ENGINEERING" alt="K-엔지니어링">
+                <p>K-엔지니어링</p>
             </a>
         </div>
     </section>
@@ -233,14 +233,14 @@
     <footer class="footer-top">
         <ul class="footer-links">
             <li><a href="#">고객센터</a></li>
-            <li><a href="#">채용 정보</a></li>
-            <li><a href="#">약관 및 정책</a></li>
-            <li><a href="#">내부 고발</a></li>
+            <li><a href="#">기술 문의</a></li>
+            <li><a href="#">보안 및 정책</a></li>
+            <li><a href="#">협력사 모집</a></li>
             <li><a href="#">개인정보 처리방침</a></li>
         </ul>
     </footer>
     <div class="footer-bottom">
-        Copyright &copy; 2025 KFinance Corporation. All rights reserved. | 대표번호: 02-1234-5678
+        Copyright &copy; 2025 KConstruction Corporation. All rights reserved. | 대표번호: 02-9876-5432
     </div>
 
 </body>
